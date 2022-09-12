@@ -5,8 +5,8 @@
         <title>All about Mikayla!</title>
         <style>
             body {
-                background: rgb(125, 198, 205);
-                color: rgb(45, 45, 45);
+                background: rgb(176, 241, 225);
+                color: rgb(255, 255, 255);
                 padding: 10px;
                 font-family: arial;
             }
@@ -18,19 +18,25 @@
 
             /* navigation menu */
             nav {
-                background: rgb(239, 80, 41);
+                background: rgb(228, 196, 230);
                 margin: 0 auto;
                 display: flex;
                 padding: 10px;
+                border-radius:25px;
+                margin-bottom: 50px;
+                border: 2px solid white;
             }
-
+    
             h1 {
                 display: flex;
                 align-items: center;
-                color: white;
+                color: rgb(255, 255, 255);
                 flex: 1;
                 margin: 0;
+                text-transform: uppercase;
+                letter-spacing: 5px;
             }
+
 
             #nav-ul {
                 list-style-image: none;
@@ -40,7 +46,9 @@
                 display: inline-block;
                 padding: 0 10px;
             }
-
+            li {
+                list-style-type: none;
+            }
             a {
                 text-decoration: none;
                 color: #fff;
@@ -48,8 +56,9 @@
 
             /* main container area beneath menu */
             main {
-                background: rgb(245, 238, 219);
+                background: rgb(189, 189, 190);
                 display: flex;
+                border-radius: 25px;
             }
 
             .sidebar {
@@ -67,7 +76,8 @@
             }
 
             #interests {
-                border: 4px silver ridge;
+                border: 2px white solid;
+                border-radius: 25px;
                 padding: 8px;
             }
 
@@ -83,11 +93,11 @@
         <div id="all-content">
             <nav>
                 <h1> All about MIkayla</h1>
-                <ul>
-                    <li>
+                <ul id="nav-ul">
+                    <li class="nav-li">
                         <a href="index.html"> Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="portfolio.html"> Portfolio </a>
                     </li>
 
@@ -99,20 +109,20 @@
             <main>
                 <!-- Sidebar section -->
                 <div class = sidebar>
-                    <img src="image.jpg">
+                    <img class="sidebar-img" src="image.jpg">
                 </div>
                 <!-- Content section -->
-                <div>
+                <div class="content">
                     <!-- Content Section-->
 
-                    <h2>Mikayla A Breaux</h2>
+                    <h2>Mikayla Amani</h2>
                     <p> Co-Captain of the ihsno cheeleaders</p>
                     <!-- Interests section -->
-                    <div>
+                    <div id="interests">
                         <h3>Interests</h3>
                         <ul>
                             <li>Shoes</li>
-                            <li>Crossbody Bags</li>
+                            <li>Animals</li>
                             <li>jewelry</li>
                         </ul>
 
